@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mecha Gamer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Tienda Gamer/CSS/styles.css">
+</head>
+
+<body>
+
+    
+
+    <!-- ================= NAVBAR ================= -->
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <img src="./IMG/logo.jpg" alt="Logo Mecha Gamer" style="height:40px; margin-right:10px;">
+                MECHA GAMER
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/productos.html">Remeras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ================= TOP BAR ================= -->
+    <div class="top-bar">
+        <div class="scroll-text">
+            🚚 Envíos a todo el país por Vía Cargo $13.000 &nbsp;&nbsp; • &nbsp;&nbsp;
+            🏬 Retiros en Libertad 440 – Zona Obelisco &nbsp;&nbsp; • &nbsp;&nbsp;
+            👕 Promo Remeras 2x$40.000
+        </div>
+    </div>
+
+    <!-- ESPACIO PARA TOP BAR + NAVBAR -->
+    <div style="height:80px;"></div>
+
+    <!-- ================= HERO ================= -->
+    <header class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Merch Gamer Real</h1>
+            <p>Vasos, remeras y cultura gamer sin respawn.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Ver productos</a>
+        </div>
+    </header>
+
+    <!-- ================= CATEGORIAS ================= -->
+    <section class="container py-5 text-center">
+        <h2 class="mb-4">Colecciones</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://picsum.photos/400/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Videojuegos</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://picsum.photos/401/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Friday Fight</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card category-card">
+                    <img src="https://picsum.photos/402/300" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Emilio Collection</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section class="bg-dark text-white py-5">
+        <div class="container text-center">
+
+            <h2 class="mb-5">Destacados</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://picsum.photos/300/300">
+                        <div class="card-body">
+                            <h6>Vaso Doom</h6>
+                            <p>$12.000</p>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card product-card">
+                        <img src="https://picsum.photos/301/300">
+                        <div class="card-body">
+                            <h6>Vaso Zelda</h6>
+                            <p>$12.000</p>
+                            <button class="btn btn-primary w-100">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="text-center py-4 bg-black text-white">
+        <p>© 2026 Mecha Gamer</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Sticky navbar -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const nav = document.getElementById("mainNav");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 80) {
+                    nav.classList.add("scrolled");
+                } else {
+                    nav.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
