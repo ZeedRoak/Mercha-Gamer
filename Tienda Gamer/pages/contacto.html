@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contacto | Mecha Gamer</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
@@ -22,111 +23,100 @@
     </div>
 
     <!-- ================= NAVBAR ================= -->
-    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
+            <a class="navbar-brand fw-bold" href="../index.html">
+                <img src="../IMG/logo.jpg" alt="Logo Mecha Gamer" style="height:40px; margin-right:10px;">
+                Mercha Gamer
+            </a>
 
-            <a class="navbar-brand fw-bold" href="../index.html">MECHA GAMER</a>
-
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="menu">
+            <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="./prodcutos.html">Remeras</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./Grabado.html">Grabado Laser</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Remeras</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
         </div>
     </nav>
 
     <!-- ESPACIO SUPERIOR -->
     <div style="height:140px;"></div>
 
+    <a href="https://wa.me/5491128655916" class="btn btn-wpp w-100">
+    💬 Contactar por WhatsApp
+</a>
+
     <!-- ================= CONTACTO ================= -->
-    <section class="container py-5">
-
-        <h1 class="text-center mb-4">Contacto</h1>
-
-        <p class="text-center mb-5">
-            Te responderemos por email o WhatsApp dentro de nuestro horario de atención.
-        </p>
-
-        <div class="row g-5">
-
-            <!-- FORMULARIO -->
-            <div class="col-lg-7">
-
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Nombre</label>
-                        <input type="text" class="form-control" placeholder="Tu nombre">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="tu@email.com">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Teléfono (Opcional)</label>
-                        <input type="tel" class="form-control">
-                    </div>
-
-                    <div class="mb-3">
-                        <label class="form-label">Mensaje</label>
-                        <textarea class="form-control" rows="5"></textarea>
-                    </div>
-
-                    <button class="btn btn-primary w-100">
-                        Enviar mensaje
-                    </button>
-                </form>
-
-            </div>
-
-            <!-- DATOS CONTACTO -->
-            <div class="col-lg-5">
-
-                <div class="contact-box p-4 shadow-sm border rounded">
-
-                    <h5>Datos de contacto</h5>
-
-                    <p>📍 Libertad 440 - Zona Obelisco - CABA</p>
-                    <p>📱 WhatsApp: 11 3598-2686</p>
-                    <p>✉️ contacto@mechagamer.com</p>
-
-                    <hr>
-
-                    <h6>Horario</h6>
-                    <p>
-                        Lunes a Sábados<br>
-                        11:30 a 19:30 hs
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= MAPA ================= -->
     <section class="container pb-5">
 
-        <h3 class="text-center mb-4">Ubicación</h3>
+    <div class="row g-5 align-items-start">
 
-        <div class="ratio ratio-16x9">
-            <iframe
-                src="https://maps.google.com/maps?q=Libertad%20440%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                loading="lazy">
-            </iframe>
+        <!-- 🔹 IZQUIERDA: INFO + REDES -->
+        <div class="col-lg-6">
+
+            <div class="contact-box p-4 shadow-sm border rounded mb-4">
+
+                <h5>Datos de contacto</h5>
+
+                <p>📍 Libertad 440 - Zona Obelisco - CABA</p>
+                <p>📱 WhatsApp: +5491128655916</p>
+                <p>✉️ contacto@mechagamer.com</p>
+
+                <hr>
+
+                <h6>Horario</h6>
+                <p>
+                    Lunes a Sábados<br>
+                    11:30 a 19:30 hs
+                </p>
+            </div>
+
+            
+
+            <!-- 🔥 REDES -->
+            <div class="d-flex gap-2 flex-wrap">
+                <a href="https://www.instagram.com/merchagamer/?hl=es" class="btn btn-instagram" target="_blank">
+                    <i class="fab fa-instagram" style="margin-right:5px;"></i> Instagram
+                </a>
+
+                <a href="https://www.instagram.com/emiliostandup/?hl=es" class="btn btn-instagram" target="_blank">
+                    <i class="fab fa-instagram" style="margin-right:5px;"></i> Emilio
+                </a>
+
+                <a href="https://www.youtube.com/@TiempodeVideojuegos" class="btn btn-youtube" target="_blank">
+                    <i class="fab fa-youtube" style="margin-right:5px;"></i> YouTube TDV
+                </a>
+
+                <a href="https://wa.me/5491128655916" class="btn btn-wpp" target="_blank">
+                    <i class="fab fa-whatsapp" style="margin-right:5px;"></i> WhatsApp
+                </a>
+            </div>
+
         </div>
 
-    </section>
+        <!-- 🔹 DERECHA: MAPA -->
+        <div class="col-lg-6">
+
+            <h5 class="mb-3 text-center text-lg-start">Ubicación</h5>
+
+            <div class="ratio ratio-16x9 shadow rounded">
+                <iframe
+                    src="https://maps.google.com/maps?q=Libertad%20440%20Buenos%20Aires&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
     <!-- ================= FOOTER ================= -->
     <footer class="text-center py-4 bg-black text-white">
@@ -136,20 +126,7 @@
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Sticky navbar -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const nav = document.getElementById("mainNav");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 80) {
-                    nav.classList.add("scrolled");
-                } else {
-                    nav.classList.remove("scrolled");
-                }
-            });
-        });
-    </script>
+    
 
 </body>
 </html>
